@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Ventas</title>
+    <link rel="stylesheet" href="ventas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Panel de Ventas</h1>
+        <nav>
+            <ul>
+                <li><a href="#cargar-producto">Cargar Producto</a></li>
+                <li><a href="#consultar-productos">Consultar Productos</a></li>
+                <li><a href="#pedidos-pendientes">Pedidos Pendientes</a></li>
+                <li><a href="#estado-cuenta">Estado de Cuenta</a></li>
+                <li><a href="#anular-pedido">Anular Pedido</a></li>
+            </ul>
+        </nav>
+
+        <section id="cargar-producto">
+            <h2>Cargar Producto</h2>
+            <form id="form-cargar-producto" action="registrarProductos.php" method="POST">
+                <label for="codigo">Código de Producto:</label>
+                <input type="text" id="codigo" required>
+
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" required>
+
+                <label for="precio">Precio Unitario:</label>
+                <input type="number" id="precio" required>
+
+                <button type="submit">Cargar Producto</button>
+            </form>
+        </section>
+
+        <section id="consultar-productos">
+            <h2>Consultar Productos</h2>
+            <button onclick="consultarProductos()">Ver Lista de Productos</button>
+            <div id="lista-productos"></div>
+        </section>
+
+        <section id="pedidos-pendientes">
+            <h2>Pedidos Pendientes</h2>
+            <button onclick="verPedidosPendientes()">Ver Pedidos Pendientes</button>
+            <div id="lista-pedidos"></div>
+        </section>
+
+        <section id="estado-cuenta">
+            <h2>Estado de Cuenta</h2>
+            <button onclick="verEstadoCuenta()">Ver Estado de Cuenta</button>
+            <div id="estado-cuenta-detalle"></div>
+        </section>
+
+        <section id="anular-pedido">
+            <h2>Anular Pedido</h2>
+            <form id="form-anular-pedido">
+                <label for="codigo-pedido">Código del Pedido:</label>
+                <input type="text" id="codigo-pedido" required>
+                <button type="submit">Anular Pedido</button>
+            </form>
+        </section>
+    </div>
+    <script src="ventas.js"></script>
+</body>
+</html>

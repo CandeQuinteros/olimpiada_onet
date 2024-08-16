@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tienda Deportiva</h1>
+
+    <div id="contenedor">
+        <!-- Lista de Productos -->
+        <div id="listaProductos">
+            <h2>Productos Disponibles</h2>
+            <!-- Los productos se cargarán dinámicamente aquí -->
+        </div>
+
+        <!-- Carrito de Compras -->
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="carritoItems">
+                <!-- Aquí se mostrarán los productos agregados al carrito -->
+            </ul>
+            <div id="carritoTotal">
+                Total: $<span id="total">0</span>
+            </div>
+            <button id="finalizarCompra">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Tabla de Resumen de Compra -->
+    <div id="resumenCompra" class="oculto">
+        <h2>Resumen de Compra</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="resumenItems">
+                <!-- Los productos del resumen se cargarán aquí -->
+            </tbody>
+        </table>
+        <button id="volverCarrito">Volver al Carrito</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+

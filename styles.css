@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#listaProductos, #carrito {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#listaProductos h2, #carrito h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.producto img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto-info {
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.producto-info h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.producto-info p {
+    margin: 0;
+    color: #666;
+}
+
+.producto-precio {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.producto-agregar, .producto-eliminar {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.producto-agregar:hover, .producto-eliminar:hover {
+    background-color: #218838;
+}
+
+#carritoItems li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#carritoTotal {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+#finalizarCompra {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#finalizarCompra:hover {
+    background-color: #0069d9;
+}
+/* Mantiene el resto de estilos... */
+
+#resumenCompra.oculto {
+    display: none;
+}
+
+#resumenCompra {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+#volverCarrito {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
